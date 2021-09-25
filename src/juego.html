@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Sofka U</title>
+    <link rel="stylesheet" href="./Css/styles.css">
+</head>
+<body class="fondo">
+    
+    <div class="quiz-container" id="quiz">
+        <!--Cabecera con la imagen-->
+        <div class="quiz-image" id="quiz-image">
+            <p class="big-text" id="big-text">NIVEL</p>
+        </div>
+        <!--Pregunta-->
+        <div class="quiz-header">
+            <div id="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <!--preguntas-->
+            <h2 id="question">Pregunta</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label id="a_text" for="a">opción</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label id="b_text" for="b">opción</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label id="c_text" for="c">opción</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label id="d_text" for="d">opción</label>
+                </li>
+            </ul>
+        </div>
+        <button class="responder" id="submit">Responder</button>
+        <button class="retirarme" id="retirarme">Retirarme</button>
+    </div>
+    <div class="estadisticas">
+        <p id="jugador"></p>
+        <p id="puntos"><b>Puntuacion: 0</b></p>
+    </div>
+    <script src="./js/Data.js"></script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
